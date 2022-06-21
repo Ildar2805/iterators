@@ -1,4 +1,4 @@
-
+from decorators import logger1
 
 class FlatIterator:
 
@@ -24,6 +24,8 @@ class FlatIterator:
 
         return self.result[self.cursor]
 
+
+@logger1
 def main():
     nested_list = [
         ['a', 'b', 'c'],
